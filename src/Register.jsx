@@ -6,8 +6,9 @@ export const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoginOrRegister ,setLoginOrRegister] = useState('register');
-
   const {setUsername:setLoggedInUsername, setId}= useContext(UserContext);
+
+
   const register = async (e) => {
     e.preventDefault();
     
